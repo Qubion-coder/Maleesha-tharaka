@@ -17,6 +17,16 @@ function SectionBackground() {
   );
 }
 
+const galleryImages = [
+  "/PRE/WhatsApp Image 2026-10-04 at 10.11.10.jpeg",
+  "/PRE/WhatsApp Image 2026-10-04 at 10.15.22.jpeg",
+  "/PRE/WhatsApp Image 2026-10-04 at 10.15.23.jpeg",
+  "/PRE/WhatsApp Image 2026-10-04 at 10.15.24.jpeg",
+  "/PRE/WhatsApp Image 2026-10-04 at 10.15.25.jpeg",
+  "/PRE/WhatsApp Image 2026-10-04 at 10.15.26.jpeg",
+  "/PRE/WhatsApp Image 2026-10-04 at 10.15.27.jpeg",
+];
+
 export default function StoryApp() {
   const [invitationOpened, setInvitationOpened] = useState(false);
   const [introPlayed, setIntroPlayed] = useState(false);
@@ -31,7 +41,7 @@ export default function StoryApp() {
   });
 
   useEffect(() => {
-    const weddingDate = new Date('2026-12-03T09:00:00').getTime();
+    const weddingDate = new Date('2026-11-05T09:00:00').getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -106,7 +116,7 @@ export default function StoryApp() {
               className="z-10 flex flex-col items-center gap-8"
             >
               <h1 className="script text-6xl sm:text-7xl text-[#2C2C2C] drop-shadow-sm font-normal text-center px-4">
-                Dinithi <span className="text-[#8B7355] text-5xl">&amp;</span> Mahesh
+                Maleesha <span className="text-[#8B7355] text-5xl">&amp;</span> Tharaka
               </h1>
               <p className="text-sm uppercase tracking-[0.3em] text-[#2C2C2C] font-medium text-center">
                 Wedding Invitation
@@ -203,12 +213,12 @@ export default function StoryApp() {
                 </h1>
 
                 <div className="flex flex-col items-center w-full mb-8 sm:mb-10">
-                  <p className="text-[13px] sm:text-[15px] uppercase tracking-widest text-[#2C2C2C] font-bold mb-2">DECEMBER</p>
+                  <p className="text-[13px] sm:text-[15px] uppercase tracking-widest text-[#2C2C2C] font-bold mb-2">NOVEMBER</p>
                   <div className="flex items-center justify-center w-full gap-4">
                     <div className="flex-1 text-right border-y border-[#2C2C2C]/30 py-2">
                       <p className="text-[12px] sm:text-sm uppercase tracking-widest text-[#2C2C2C] font-bold">THURSDAY</p>
                     </div>
-                    <p className="serif text-7xl sm:text-[4.5rem] font-medium text-[#2C2C2C] leading-none px-1">03</p>
+                    <p className="serif text-7xl sm:text-[4.5rem] font-medium text-[#2C2C2C] leading-none px-1">05</p>
                     <div className="flex-1 text-left border-y border-[#2C2C2C]/30 py-2">
                       <p className="text-[12px] sm:text-sm uppercase tracking-widest text-[#2C2C2C] font-bold">AT 09:00 AM</p>
                     </div>
@@ -217,17 +227,17 @@ export default function StoryApp() {
                 </div>
 
                 <a
-                  href="https://maps.app.goo.gl/Eyz8nESEaTmVXw6t6"
+                  href="https://maps.app.goo.gl/G1Yrj9ioJHhngqst6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="space-y-2 mt-2 sm:mt-4 text-[#2C2C2C] hover:opacity-70 transition-opacity block"
                 >
                   <p className="text-[12px] sm:text-sm uppercase tracking-widest font-bold flex items-center justify-center gap-1.5">
                     <MapPin size={12} className="text-[#8B7355]" />
-                    HOTEL GRAND GUARDIAN
+                    THE REGENT BALLROOM
                   </p>
-                  <p className="text-[11px] sm:text-[12px] uppercase tracking-[0.15em] font-medium">KURUWITA</p>
-                  <p className="text-[11px] sm:text-[12px] uppercase tracking-[0.15em] font-medium px-4">BANQUET HALL, KURUWITA</p>
+                  <p className="text-[11px] sm:text-[12px] uppercase tracking-[0.15em] font-medium">EARL'S REGENCY</p>
+                  <p className="text-[11px] sm:text-[12px] uppercase tracking-[0.15em] font-medium px-4">KANDY</p>
                 </a>
 
                 <div className="mt-8 sm:mt-10">
@@ -268,7 +278,7 @@ export default function StoryApp() {
 
                   <div className="flex flex-col items-center w-full mb-8">
                     <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-400 mb-3 font-bold">Bride's Parents</p>
-                    <p className="serif text-xl text-[#2C2C2C] leading-relaxed text-center">Mr. &amp; Mrs. Sumanapala</p>
+                    <p className="serif text-xl text-[#2C2C2C] leading-relaxed text-center">Mr. &amp; Mrs. Dharmapala</p>
                   </div>
 
                   {/* Elegant Divider */}
@@ -280,7 +290,7 @@ export default function StoryApp() {
 
                   <div className="flex flex-col items-center w-full">
                     <p className="text-[11px] uppercase tracking-[0.2em] text-zinc-400 mb-3 font-bold">Groom's Parents</p>
-                    <p className="serif text-xl text-[#2C2C2C] leading-relaxed text-center">Mr. &amp; Mrs. Gunarathne</p>
+                    <p className="serif text-xl text-[#2C2C2C] leading-relaxed text-center">(Late) Mr. Jayathilake &amp; Mrs. Jayathilake</p>
                   </div>
                 </div>
               </motion.div>
@@ -358,9 +368,9 @@ export default function StoryApp() {
               transition={{ duration: 1, delay: 0.3 }}
               className="flex-1 w-full flex flex-col items-center justify-start text-center pt-2 pb-12 z-20 bg-white"
             >
-              <h2 className="serif text-6xl md:text-7xl text-[#2C2C2C] font-normal leading-none mt-4">DINITHI</h2>
+              <h2 className="serif text-6xl md:text-7xl text-[#2C2C2C] font-normal leading-none mt-4">MALEESHA</h2>
               <span className="script text-5xl md:text-6xl text-[#2C2C2C] my-1 opacity-80">and</span>
-              <h2 className="serif text-6xl md:text-7xl text-[#2C2C2C] font-normal leading-none">MAHESH</h2>
+              <h2 className="serif text-6xl md:text-7xl text-[#2C2C2C] font-normal leading-none">THARAKA</h2>
             </motion.div>
           </div>
         </section>
@@ -380,13 +390,13 @@ export default function StoryApp() {
                 
                 <div className="space-y-4 text-[#3D2B1F] text-[13px] md:text-[14px] leading-relaxed font-medium">
                   <p>
-                    We grew up together since 2018, when our paths first crossed and our beautiful journey began.
+                    From the moment our paths crossed, our beautiful journey began.
                   </p>
                   <p>
-                    Through laughter, love, and countless memories, we have grown together and cherished every moment.
+                    Through laughter and love, we have grown together and cherished every moment.
                   </p>
                   <p>
-                    Now, as we begin a new chapter of our lives, we look forward to creating a lifetime of memories together.
+                    Now, as we begin this new chapter, we look forward to a lifetime of memories together.
                   </p>
                   <p className="font-bold pt-4 text-[#8B7355] uppercase tracking-widest text-[11px]">
                     Join us as we step into forever
@@ -396,6 +406,37 @@ export default function StoryApp() {
             </div>
           </div>
         </section>
+
+        {/* --- SCREEN 3: Gallery --- */}
+        <section className="snap-section relative z-10 overflow-hidden bg-[#FAF7F2] flex flex-col justify-center">
+          <SectionBackground />
+          <div className="absolute inset-0 flex flex-col items-center justify-center py-10 z-20">
+            <h2 className="script text-6xl text-[#8B7355] mb-8 text-center drop-shadow-sm">Gallery</h2>
+            <div className="w-full relative overflow-hidden flex whitespace-nowrap">
+              {/* Fade masks for smooth edges */}
+              <div className="absolute top-0 left-0 bottom-0 w-16 bg-gradient-to-r from-[#FAF7F2] to-transparent z-10 pointer-events-none" />
+              <div className="absolute top-0 right-0 bottom-0 w-16 bg-gradient-to-l from-[#FAF7F2] to-transparent z-10 pointer-events-none" />
+              
+              <motion.div
+                className="flex gap-4 px-4 w-max"
+                animate={{ x: ["0%", "-50%"] }}
+                transition={{
+                  repeat: Infinity,
+                  ease: "linear",
+                  duration: 25
+                }}
+              >
+                {/* Double the array for a seamless infinite loop */}
+                {[...galleryImages, ...galleryImages].map((src, index) => (
+                  <div key={index} className="w-56 h-80 sm:w-64 sm:h-96 shrink-0 rounded-2xl overflow-hidden shadow-xl border-4 border-white/80">
+                    <img src={src} alt="Gallery image" className="w-full h-full object-cover object-center" />
+                  </div>
+                ))}
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
         {/* --- SCREEN 4: Timeline --- */}
         <section className="snap-section relative z-10 overflow-hidden">
           <SectionBackground />
@@ -420,9 +461,9 @@ export default function StoryApp() {
 
                   {([
                     { time: "09:00 AM", title: "GUEST ARRIVALS" },
-                    { time: "09:14 AM", title: "REGISTRATION" },
-                    { time: "01:31 PM", title: "LUNCH" },
-                    { time: "04:16 PM", title: "GOING AWAY" },
+                    { time: "10:14 AM", title: "PORUWA CEREMONY" },
+                    { time: "01:00 PM", title: "LUNCH" },
+                    { time: "04:00 PM", title: "GOING AWAY" },
                   ] as { time: string; title: string; sub?: string }[]).map((item, idx) => (
                     <div key={idx} className="relative z-10 bg-white/70 backdrop-blur-sm p-4 rounded-xl border border-white shadow-sm w-[85%] mx-auto">
                       <p className="text-[13px] font-bold text-[#8B7355] mb-1">{item.time}</p>
@@ -462,11 +503,11 @@ export default function StoryApp() {
                     <p className="text-[12px] uppercase tracking-[0.2em] font-bold text-[#8B7355]">Location</p>
                   </div>
                   <div className="bg-white py-4 rounded-b-xl shadow-sm border border-white mb-4 flex flex-col items-center">
-                    <p className="text-[12px] uppercase font-bold text-[#3D2B1F]">Hotel Grand Guardian</p>
-                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 mt-1">Kuruwita</p>
-                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 mb-3 px-2 text-center">Banquet Hall, Kuruwita</p>
+                    <p className="text-[12px] uppercase font-bold text-[#3D2B1F]">The Regent Ballroom</p>
+                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 mt-1">Earl's Regency</p>
+                    <p className="text-[10px] uppercase tracking-widest text-zinc-500 mb-3 px-2 text-center">Kandy</p>
                     <a
-                      href="https://maps.app.goo.gl/Eyz8nESEaTmVXw6t6"
+                      href="https://maps.app.goo.gl/G1Yrj9ioJHhngqst6"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 px-3 py-1.5 bg-[#EAE1D3] text-[#3D2B1F] rounded-full text-[10px] uppercase tracking-widest font-bold hover:bg-[#C8B29E] transition-colors"
@@ -505,9 +546,7 @@ export default function StoryApp() {
                 <p className="serif text-[13px] sm:text-[15px] uppercase tracking-[0.15em] font-bold text-[#2C2C2C] mb-2">
                   BY NOVEMBER 1, 2026
                 </p>
-                <p className="text-[10px] sm:text-[11px] uppercase tracking-[0.1em] text-zinc-500 mb-6 font-semibold">
-                  Or Contact Us: Mahesh 0773937679 / Dinithi 0779150379
-                </p>
+
 
                 <div className="w-full">
                   <RSVPForm />

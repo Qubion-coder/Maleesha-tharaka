@@ -44,7 +44,7 @@ export default function AdminPage() {
     const url = `${window.location.origin}/${encodeURIComponent(displayName)}`;
     const greeting = getDisplayName(prefix, guestName);
     
-    const message = `Dear ${greeting} ❤️\n\nWith joyful hearts, we warmly invite you to celebrate one of the most special days of our lives as we begin our journey together.\n\nPlease view our wedding invitation and all the event details through the link below 🌐:\n\n${url}\n\nYour presence would truly mean the world to us, and we would be honored to celebrate this beautiful moment together.\n\nWith love,\n❤️ Mahesh & Dinithi`;
+    const message = `Dear ${greeting} ❤️\n\nWith joyful hearts, we warmly invite you to celebrate one of the most special days of our lives as we begin our journey together.\n\nPlease view our wedding invitation and all the event details through the link below 🌐:\n\n${url}\n\nYour presence would truly mean the world to us, and we would be honored to celebrate this beautiful moment together.\n\nWith love,\n❤️ Maleesha & Tharaka`;
     
     setGenerated({ url, message, greeting });
   };
