@@ -25,6 +25,8 @@ const galleryImages = [
   "/PRE/WhatsApp Image 2026-10-04 at 10.15.25.jpeg",
   "/PRE/WhatsApp Image 2026-10-04 at 10.15.26.jpeg",
   "/PRE/WhatsApp Image 2026-10-04 at 10.15.27.jpeg",
+  "/PRE/WhatsApp Image 2026-10-05 at 05.44.05.jpeg",
+  "/PRE/Minimalist Black Ensemble Editorial.png",
 ];
 
 export default function StoryApp() {
@@ -462,7 +464,6 @@ export default function StoryApp() {
                   {([
                     { time: "09:00 AM", title: "GUEST ARRIVALS" },
                     { time: "10:14 AM", title: "PORUWA CEREMONY" },
-                    { time: "01:00 PM", title: "LUNCH" },
                     { time: "04:00 PM", title: "GOING AWAY" },
                   ] as { time: string; title: string; sub?: string }[]).map((item, idx) => (
                     <div key={idx} className="relative z-10 bg-white/70 backdrop-blur-sm p-4 rounded-xl border border-white shadow-sm w-[85%] mx-auto">
